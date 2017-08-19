@@ -2,55 +2,26 @@ package com.mustafaergan.sunucuyonetimi.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import lombok.Data;
 
 
-@Entity
-public class Server {
-	
+@Entity(name="sunucu")
+public @Data  class Server {
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	
 	private String name;
-	
 	private String ip;
 	
-	@Column(name = "person_id")
-	private String personId;
-	
-	public void setId(int id) {
-		this.id = id;
-	}
-	
-	public void setIp(String ip) {
-		this.ip = ip;
-	}
-	
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	public void setPersonId(String personId) {
-		this.personId = personId;
-	}
-	
-	public int getId() {
-		return id;
-	}
-	
-	public String getIp() {
-		return ip;
-	}
-	
-	public String getName() {
-		return name;
-	}
-	
-	public String getPersonId() {
-		return personId;
-	}
+	@ManyToOne
+	Person assigneePerson;
+
 }
 
 

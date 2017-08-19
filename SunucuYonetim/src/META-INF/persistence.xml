@@ -3,6 +3,10 @@
 	<persistence-unit name="SunucuYonetimi">
 	
 	<class>com.mustafaergan.sunucuyonetimi.entity.Server</class>
+	<class>com.mustafaergan.sunucuyonetimi.entity.Person</class>
+	<class>com.mustafaergan.sunucuyonetimi.entity.Adres</class>
+	
+	
 	
 	<properties>
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
