@@ -7,14 +7,12 @@ public class Islem {
 		dao.connection();
 		
 		Server server = new Server();
-		server.setId(0);
+//		server.setId(0);
 		server.setName("mustafa");
-		server.setPersonId("0");
 		
 		Server server2 = new Server();
-		server2.setId(0);
+//		server2.setId(0);
 		server2.setName("mustafa2");
-		server2.setPersonId("0");
 		
 		dao.em.getTransaction().begin();
 		dao.em.persist(server);
