@@ -1,9 +1,13 @@
 package com.mustafaergan.sunucuyonetimi.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 
 import lombok.Data;
@@ -19,5 +23,8 @@ public @Data class Person {
 	
 	@OneToOne
 	Adres adres;
+	
+	@ManyToMany(mappedBy = "personList")
+	List<Yonetici> yoneticiList = new ArrayList<>();
 	
 }
