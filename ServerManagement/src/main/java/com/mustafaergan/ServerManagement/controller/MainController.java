@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping(path = "main")
+@RequestMapping(path = "/main")
 public class MainController {
 
-	@GetMapping(path = "hello")
+	@GetMapping(path = "/hello")
 	@ResponseBody
 	public String helloWorld() {
 		return "Hello World";
