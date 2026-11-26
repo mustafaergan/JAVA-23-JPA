@@ -23,7 +23,7 @@ Varlıklar ve ilişkiler (iki projede de aynı):
 ## Teknolojiler
 
 - Java 8, Maven
-- `SunucuYonetim`: Hibernate 5.2.10, MySQL Connector/J 5.1.9, Lombok 1.16.18
+- `SunucuYonetim`: Hibernate 5.3.38, MySQL Connector/J 5.1.49, Lombok 1.16.18
 - `ServerManagement`: Spring Boot 1.5.6 (web, data-jpa), MySQL Connector/J, Lombok 1.16.18
 
 ## Çalıştırma
